@@ -42,6 +42,7 @@ def game_loop(word_array)
   turn = 1
   game_word = select_word(word_array)
   player_guesses =[]
+  puts "------------------------------------------"
   print_game(game_word, player_guesses)
   while turn <= 12 && win == false do
     puts "Enter guess #{turn}, you have #{13-turn} turns left."
